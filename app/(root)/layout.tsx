@@ -1,10 +1,11 @@
-import Header from "@/components/ui/Header/Header";
-import Sidebar from "@/components/ui/Sidebar/Sidebar";
+import Header from '@/components/ui/Header/Header'
+import MobileNav from '@/components/ui/MobileNav/MobileNav'
+import Sidebar from '@/components/ui/Sidebar/Sidebar'
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <div className="flex">
@@ -12,7 +13,10 @@ export default function RootLayout({
       <div className="w-full">
         <Header />
         <div className="px-4 py-3">{children}</div>
+        <div className="sticky bottom-0">
+          <MobileNav />
+        </div>
       </div>
     </div>
-  );
+  )
 }

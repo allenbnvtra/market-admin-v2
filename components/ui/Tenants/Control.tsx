@@ -7,9 +7,10 @@ import { MdFilterList } from 'react-icons/md'
 
 // Components
 import AddTenantModal from '../Modals/AddTenantModal'
+import Filter from './Filter'
 
 const Control = () => {
-  const [isChecked, setIsChecked] = useState(false)
+  const [isFilterOpen, setIsFilterOpen] = useState(false)
 
   // MODAL
   const [isAddTenantModalOpen, setIsAddTenantModalOpen] = useState(false)
@@ -21,7 +22,7 @@ const Control = () => {
           <input
             type="search"
             placeholder="Search..."
-            className="rounded-full border border-slate-400 py-2 pl-9 pr-3 text-xs focus:outline-none sm:w-[18rem]"
+            className="rounded-full border border-slate-400 bg-white py-2 pl-9 pr-3 text-xs focus:outline-none sm:w-[18rem]"
           />
           <IoSearchSharp className="absolute left-4 top-[10px] text-slate-500" />
         </div>
@@ -33,10 +34,14 @@ const Control = () => {
             onClick={() => setIsAddTenantModalOpen(true)}
           />
 
-          <MdFilterList
-            title="Filter"
-            className="cursor-pointer text-2xl text-slate-700"
-          />
+          <div className="relative">
+            <MdFilterList
+              title="Filter"
+              className="cursor-pointer text-2xl text-slate-700"
+              onClick={() => setIsFilterOpen(!isFilterOpen)}
+            />
+            {isFilterOpen && <Filter />}
+          </div>
         </div>
       </div>
 

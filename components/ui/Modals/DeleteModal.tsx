@@ -12,10 +12,14 @@ const DeleteModal = ({
 }: DeleteModalProps) => {
   return (
     <div
-      className={`${isDeleteModalOpen ? 'fixed' : 'hidden'} inset-0 z-[1000] flex items-center justify-center`}
+      className={`${isDeleteModalOpen ? 'visible' : 'invisible'} fixed inset-0 z-[1000] flex items-center justify-center`}
     >
-      <div className="fixed inset-0 bg-black opacity-15"></div>
-      <div className="z-[1000] mx-2 rounded-md bg-white p-1">
+      <div
+        className={`fixed inset-0 bg-black transition-opacity duration-300 ${isDeleteModalOpen ? 'opacity-50' : 'opacity-0'}`}
+      ></div>
+      <div
+        className={`z-[1000] mx-2 rounded-md bg-white p-1 transition-transform duration-200 ${isDeleteModalOpen ? 'translate-y-0' : '-translate-y-full'}`}
+      >
         <div className="flex justify-end">
           <button onClick={closeDeleteModal} className="text-lg text-gray-500">
             <IoClose />

@@ -22,3 +22,7 @@ html {
 .form_input {
   @apply w-[15rem] rounded-md border border-slate-300 p-2 text-xs focus:outline-none xs:w-[22rem];
 }
+
+.filter_dropdown {
+  @apply cursor-pointer px-4 py-2 text-xs text-slate-800 hover:bg-slate-100;
+}

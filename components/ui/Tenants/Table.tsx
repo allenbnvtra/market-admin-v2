@@ -14,10 +14,10 @@ const Table = () => {
 
   return (
     <>
-      <div className="my-4 h-[38.2rem] overflow-x-auto rounded-xl border border-slate-300 shadow-md">
+      <div className="z-0 my-4 h-[38.2rem] overflow-x-auto rounded-xl border border-slate-300 shadow-md">
         <div className="relative h-full overflow-y-auto">
           <table className="w-full">
-            <thead className="sticky top-0 z-10 bg-white text-sm">
+            <thead className="sticky top-0 bg-white text-sm">
               <tr>
                 <th className="t_head w-[5%]">
                   <input
@@ -54,7 +54,7 @@ const Table = () => {
                 <td className="t_column">P 20,832.99</td>
                 <td className="flex items-center justify-center gap-2 py-3 text-lg md:text-[16px]">
                   <MdListAlt
-                    title="View"
+                    title="View Bills"
                     className="cursor-pointer text-blue-700"
                   />
                   <FaEdit
@@ -70,25 +70,24 @@ const Table = () => {
                 </td>
               </tr>
             </tbody>
-
-            <tfoot className="sticky bottom-0 z-10 bg-gray-50">
-              <tr>
-                <td colSpan={7}>
-                  <div className="flex w-full items-center gap-3 border-t px-5 py-4 text-xs text-slate-500">
-                    <p>1-10 of 210</p>
-                    <div className="flex gap-3 text-sm">
-                      <p className="cursor-pointer text-slate-400">
-                        <FaAngleLeft />
-                      </p>
-                      <p className="cursor-pointer text-slate-900">
-                        <FaAngleRight />
-                      </p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tfoot>
           </table>
+          <div className="absolute bottom-0 z-0 w-full bg-gray-50">
+            <div>
+              <div>
+                <div className="flex w-full items-center gap-3 border-t px-5 py-4 text-xs text-slate-500">
+                  <p>1-10 of 210</p>
+                  <div className="flex gap-3 text-sm">
+                    <p className="cursor-pointer text-slate-400">
+                      <FaAngleLeft />
+                    </p>
+                    <p className="cursor-pointer text-slate-900">
+                      <FaAngleRight />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

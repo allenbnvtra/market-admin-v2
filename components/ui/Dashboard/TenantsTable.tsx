@@ -11,7 +11,7 @@ const TenantsTable = () => {
           <input
             type="search"
             placeholder="Search..."
-            className="rounded-full border border-slate-300 py-2 pl-9 pr-3 text-xs focus:outline-none sm:w-[18rem]"
+            className="rounded-full border border-slate-300 bg-white py-2 pl-9 pr-3 text-xs focus:outline-none sm:w-[18rem]"
           />
           <IoSearchSharp className="absolute left-4 top-[10px] text-slate-500" />
         </div>
