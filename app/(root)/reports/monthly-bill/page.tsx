@@ -1,5 +1,5 @@
 const MonthlyBillPage = () => {
-  return <div>MonthlyBillPage</div>;
-};
+  return <div className="h-screen">MonthlyBillPage</div>
+}
 
-export default MonthlyBillPage;
+export default MonthlyBillPage

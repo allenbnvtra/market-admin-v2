@@ -1,8 +1,13 @@
 'use client'
 
 import { useState } from 'react'
-import { FaAngleLeft, FaAngleRight, FaEdit } from 'react-icons/fa'
-import { MdDelete, MdListAlt } from 'react-icons/md'
+import {
+  FaAngleLeft,
+  FaAngleRight,
+  FaArchive,
+  FaRegEdit,
+  FaRegListAlt
+} from 'react-icons/fa'
 
 // Components
 import EditModal from '../Modals/EditModal'
@@ -14,7 +19,7 @@ const Table = () => {
 
   return (
     <>
-      <div className="z-0 my-4 h-[38.2rem] overflow-x-auto rounded-xl border border-slate-300 shadow-md">
+      <div className="z-0 mt-4 h-[38.2rem] overflow-x-auto rounded-xl border border-slate-300 shadow-md">
         <div className="relative h-full overflow-y-auto">
           <table className="w-full">
             <thead className="sticky top-0 bg-white text-sm">
@@ -53,17 +58,17 @@ const Table = () => {
                 <td className="t_column">allenbnvtra</td>
                 <td className="t_column">P 20,832.99</td>
                 <td className="flex items-center justify-center gap-2 py-3 text-lg md:text-[16px]">
-                  <MdListAlt
+                  <FaRegListAlt
                     title="View Bills"
                     className="cursor-pointer text-blue-700"
                   />
-                  <FaEdit
+                  <FaRegEdit
                     title="Edit"
                     className="cursor-pointer text-green-600"
                     onClick={() => setIsEditTenantModalOpen(true)}
                   />
-                  <MdDelete
-                    title="Delete"
+                  <FaArchive
+                    title="Archive"
                     className="cursor-pointer text-red-600"
                     onClick={() => setIsDeleteModalOpen(true)}
                   />

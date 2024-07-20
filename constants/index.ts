@@ -1,42 +1,51 @@
-import { LuLayoutDashboard } from "react-icons/lu";
-import { IoPeopleOutline } from "react-icons/io5";
-import { HiOutlineDocumentReport } from "react-icons/hi";
-import { TbLogs } from "react-icons/tb";
+import { LuLayoutDashboard } from 'react-icons/lu'
+import { IoPeopleOutline } from 'react-icons/io5'
+import { HiOutlineDocumentReport } from 'react-icons/hi'
+import { TbLogs } from 'react-icons/tb'
 
-export const SidebarItems = [
-  { icon: LuLayoutDashboard, title: "Dashboard", path: "/dashboard" },
-  { icon: IoPeopleOutline, title: "Tenants", path: "/tenants" },
+type SidebarItem = {
+  icon: IconType
+  title: string
+  subLinks?: { title: string; path: string }[]
+  path?: string
+}
+
+export const SidebarItems: SidebarItem[] = [
+  { icon: LuLayoutDashboard, title: 'Dashboard', path: '/dashboard' },
+  { icon: IoPeopleOutline, title: 'Tenants', path: '/tenants' },
   {
     icon: HiOutlineDocumentReport,
-    title: "Reports",
+    title: 'Reports',
     subLinks: [
-      { title: "Monthly Billing", path: "/reports/monthly-bill" },
-      { title: "Payments", path: "/reports/payments" },
-    ],
+      { title: 'General', path: '/reports' },
+      { title: 'Monthly Billing', path: '/reports/monthly-bill' },
+      { title: 'Payments', path: '/reports/payments' }
+    ]
   },
-  { icon: TbLogs, title: "Activity Logs", path: "/activity-logs" },
-];
+  { icon: TbLogs, title: 'Activity Logs', path: '/activity-logs' }
+]
 
-import { GoPeople } from "react-icons/go";
-import { MdMoneyOff, MdOutlineReportOff } from "react-icons/md";
+import { GoPeople } from 'react-icons/go'
+import { MdMoneyOff, MdOutlineReportOff } from 'react-icons/md'
+import { IconType } from 'react-icons'
 
 export const SummaryBox = [
   {
     icon1: GoPeople,
-    title: "Total Tenants",
+    title: 'Total Tenants',
     percentage: 0,
-    count: 97,
+    count: 97
   },
   {
     icon1: MdOutlineReportOff,
-    title: "Unpaid Tenants",
+    title: 'Unpaid Tenants',
     percentage: -2.02,
-    count: 7,
+    count: 7
   },
   {
     icon1: MdMoneyOff,
-    title: "Unpaid Bills",
+    title: 'Unpaid Bills',
     percentage: 13.1,
-    count: 14920,
-  },
-];
+    count: 14920
+  }
+]

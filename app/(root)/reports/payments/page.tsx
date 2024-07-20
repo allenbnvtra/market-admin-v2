@@ -1,5 +1,5 @@
 const PaymentsPage = () => {
-  return <div>PaymentsPage</div>;
-};
+  return <div className="h-screen">PaymentsPage</div>
+}
 
-export default PaymentsPage;
+export default PaymentsPage

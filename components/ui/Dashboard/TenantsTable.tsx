@@ -1,6 +1,5 @@
 import { IoSearchSharp } from 'react-icons/io5'
-import { FaAngleLeft, FaAngleRight, FaEdit } from 'react-icons/fa'
-import { MdDelete, MdListAlt } from 'react-icons/md'
+import { FaAngleLeft, FaAngleRight, FaRegListAlt } from 'react-icons/fa'
 
 const TenantsTable = () => {
   return (
@@ -59,17 +58,9 @@ const TenantsTable = () => {
                   allenbnvtra.11
                 </td>
                 <td className="flex items-center justify-center gap-2 py-3 text-lg md:text-[15px]">
-                  <MdListAlt
-                    title="View"
-                    className="cursor-pointer text-blue-700"
-                  />
-                  <FaEdit
-                    title="Edit"
-                    className="cursor-pointer text-green-600"
-                  />
-                  <MdDelete
-                    title="Delete"
-                    className="cursor-pointer text-red-600"
+                  <FaRegListAlt
+                    title="View Bills"
+                    className="cursor-pointer text-blue-600"
                   />
                 </td>
               </tr>
