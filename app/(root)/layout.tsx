@@ -8,11 +8,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div className="flex">
+    <div className="flex bg-gray-50">
       <Sidebar />
       <div className="w-full">
         <Header />
-        <div className="px-4 py-3">{children}</div>
+        <div className="bg-gray-50 px-7 py-3">{children}</div>
         <div className="sticky bottom-0">
           <MobileNav />
         </div>

@@ -17,7 +17,12 @@ const config = {
       lg: '1180px',
       xl: '1280px'
     },
-    extend: {}
+    extend: {
+      fontSize: {
+        xs: '10px',
+        sm: '13px'
+      }
+    }
   },
   plugins: [require('tailwindcss-animate')]
 } satisfies Config

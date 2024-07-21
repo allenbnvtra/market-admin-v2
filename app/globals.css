@@ -8,7 +8,7 @@ html {
 }
 
 .t_head {
-  @apply bg-gray-100 px-8 py-4 text-start font-normal text-gray-900;
+  @apply bg-[#344d7aed] px-8 py-4 text-start font-normal text-white;
 }
 
 .t_column {

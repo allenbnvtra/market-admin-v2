@@ -4,10 +4,10 @@ import { useState } from 'react'
 import {
   FaAngleLeft,
   FaAngleRight,
-  FaArchive,
   FaRegEdit,
   FaRegListAlt
 } from 'react-icons/fa'
+import { FiArchive } from 'react-icons/fi'
 
 // Components
 import EditModal from '../Modals/EditModal'
@@ -19,10 +19,10 @@ const Table = () => {
 
   return (
     <>
-      <div className="z-0 mt-4 h-[38.2rem] overflow-x-auto rounded-xl border border-slate-300 shadow-md">
+      <div className="z-0 mt-4 h-[34.2rem] overflow-x-auto rounded-xl border border-[#6a76894c] bg-white shadow-md">
         <div className="relative h-full overflow-y-auto">
           <table className="w-full">
-            <thead className="sticky top-0 bg-white text-sm">
+            <thead className="sticky top-0 text-sm">
               <tr>
                 <th className="t_head w-[5%]">
                   <input
@@ -41,7 +41,7 @@ const Table = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b">
+              <tr className="border-b border-b-slate-300">
                 <td className="t_column text-center">
                   <input
                     className="h-4 w-4 cursor-pointer"
@@ -67,7 +67,73 @@ const Table = () => {
                     className="cursor-pointer text-green-600"
                     onClick={() => setIsEditTenantModalOpen(true)}
                   />
-                  <FaArchive
+                  <FiArchive
+                    title="Archive"
+                    className="cursor-pointer text-red-600"
+                    onClick={() => setIsDeleteModalOpen(true)}
+                  />
+                </td>
+              </tr>
+              <tr className="border-b border-b-slate-300">
+                <td className="t_column text-center">
+                  <input
+                    className="h-4 w-4 cursor-pointer"
+                    type="checkbox"
+                    name=""
+                    id="delete"
+                  />
+                </td>
+                <td className="t_column">
+                  7892309182303489623490698731dasdaiuhi
+                </td>
+                <td className="t_column">Allen V. Buenaventura</td>
+                <td className="t_column">hen101</td>
+                <td className="t_column">allenbnvtra</td>
+                <td className="t_column">P 20,832.99</td>
+                <td className="flex items-center justify-center gap-2 py-3 text-lg md:text-[16px]">
+                  <FaRegListAlt
+                    title="View Bills"
+                    className="cursor-pointer text-blue-700"
+                  />
+                  <FaRegEdit
+                    title="Edit"
+                    className="cursor-pointer text-green-600"
+                    onClick={() => setIsEditTenantModalOpen(true)}
+                  />
+                  <FiArchive
+                    title="Archive"
+                    className="cursor-pointer text-red-600"
+                    onClick={() => setIsDeleteModalOpen(true)}
+                  />
+                </td>
+              </tr>
+              <tr className="border-b border-b-slate-300">
+                <td className="t_column text-center">
+                  <input
+                    className="h-4 w-4 cursor-pointer"
+                    type="checkbox"
+                    name=""
+                    id="delete"
+                  />
+                </td>
+                <td className="t_column">
+                  7892309182303489623490698731dasdaiuhi
+                </td>
+                <td className="t_column">Allen V. Buenaventura</td>
+                <td className="t_column">hen101</td>
+                <td className="t_column">allenbnvtra</td>
+                <td className="t_column">P 20,832.99</td>
+                <td className="flex items-center justify-center gap-2 py-3 text-lg md:text-[16px]">
+                  <FaRegListAlt
+                    title="View Bills"
+                    className="cursor-pointer text-blue-700"
+                  />
+                  <FaRegEdit
+                    title="Edit"
+                    className="cursor-pointer text-green-600"
+                    onClick={() => setIsEditTenantModalOpen(true)}
+                  />
+                  <FiArchive
                     title="Archive"
                     className="cursor-pointer text-red-600"
                     onClick={() => setIsDeleteModalOpen(true)}
@@ -76,16 +142,16 @@ const Table = () => {
               </tr>
             </tbody>
           </table>
-          <div className="absolute bottom-0 z-0 w-full bg-gray-50">
+          <div className="absolute bottom-0 z-0 w-full bg-[#344d7aed] text-white">
             <div>
               <div>
-                <div className="flex w-full items-center gap-3 border-t px-5 py-4 text-xs text-slate-500">
+                <div className="flex w-full items-center gap-3 border-t px-5 py-4 text-xs">
                   <p>1-10 of 210</p>
                   <div className="flex gap-3 text-sm">
-                    <p className="cursor-pointer text-slate-400">
+                    <p className="cursor-pointer">
                       <FaAngleLeft />
                     </p>
-                    <p className="cursor-pointer text-slate-900">
+                    <p className="cursor-pointer">
                       <FaAngleRight />
                     </p>
                   </div>

@@ -5,7 +5,7 @@ import Profile from './Profile'
 
 const Sidebar = () => {
   return (
-    <div className="sticky left-0 top-0 hidden !h-screen w-[18rem] bg-slate-50 md:block">
+    <div className="sticky left-0 top-0 hidden !h-screen w-[17rem] bg-slate-50 md:block">
       <nav className="flex h-full flex-col items-center justify-between border px-2 py-5 shadow-lg">
         <div className="w-full">
           <Link

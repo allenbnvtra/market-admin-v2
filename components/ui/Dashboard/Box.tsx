@@ -1,35 +1,35 @@
-import { IconType } from "react-icons";
+import { IconType } from 'react-icons'
 
-import { IoMdArrowDropup, IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup, IoMdArrowDropdown } from 'react-icons/io'
 
 interface BoxProps {
-  percentage: number;
-  title: string;
-  count: number;
-  icon1: IconType;
+  percentage: number
+  title: string
+  count: number
+  icon1: IconType
 }
 
 const formatCount = (count: number): string => {
   if (count >= 1000000) {
-    return (count / 1000000).toFixed(1) + "m";
+    return (count / 1000000).toFixed(1) + 'm'
   } else if (count >= 1000) {
-    return (count / 1000).toFixed(1) + "k";
+    return (count / 1000).toFixed(1) + 'k'
   }
-  return count.toString();
-};
+  return count.toString()
+}
 
 const Box = ({ percentage, title, count, icon1: Icon1 }: BoxProps) => {
   const percentageColorClass =
     percentage < 0
-      ? "text-red-600"
+      ? 'text-red-600'
       : percentage === 0
-        ? "text-slate-700"
-        : "text-green-600";
+        ? 'text-slate-700'
+        : 'text-green-600'
 
-  const ChosenIcon = percentage < 0 ? IoMdArrowDropdown : IoMdArrowDropup;
+  const ChosenIcon = percentage < 0 ? IoMdArrowDropdown : IoMdArrowDropup
 
   return (
-    <div className="w-full rounded-md border border-slate-200 p-3 shadow-md">
+    <div className="w-full rounded-md border border-slate-200 bg-white p-3 shadow-md">
       <div className="flex justify-between">
         <div className="text-md rounded-md border border-slate-300 p-2">
           <Icon1 />
@@ -49,7 +49,7 @@ const Box = ({ percentage, title, count, icon1: Icon1 }: BoxProps) => {
         </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Box;
+export default Box

@@ -4,7 +4,7 @@ import Title from './ui/Title'
 
 const Tenants = () => {
   return (
-    <div>
+    <div className="flex h-screen flex-col gap-3">
       <Title title="Tenants" />
 
       <div className="xl:px-[5rem]">

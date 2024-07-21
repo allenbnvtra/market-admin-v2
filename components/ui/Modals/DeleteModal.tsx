@@ -12,7 +12,7 @@ const DeleteModal = ({
 }: DeleteModalProps) => {
   return (
     <div
-      className={`${isDeleteModalOpen ? 'visible' : 'invisible'} fixed inset-0 z-[1000] flex items-center justify-center`}
+      className={`${isDeleteModalOpen ? 'visible' : 'invisible'} fixed inset-0 z-[1000] mx-2 flex items-center justify-center`}
     >
       <div
         className={`fixed inset-0 bg-black transition-opacity duration-300 ${isDeleteModalOpen ? 'opacity-50' : 'opacity-0'}`}

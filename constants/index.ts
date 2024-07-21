@@ -2,6 +2,7 @@ import { LuLayoutDashboard } from 'react-icons/lu'
 import { IoPeopleOutline } from 'react-icons/io5'
 import { HiOutlineDocumentReport } from 'react-icons/hi'
 import { TbLogs } from 'react-icons/tb'
+import { AiOutlineMessage } from 'react-icons/ai'
 
 type SidebarItem = {
   icon: IconType
@@ -13,6 +14,8 @@ type SidebarItem = {
 export const SidebarItems: SidebarItem[] = [
   { icon: LuLayoutDashboard, title: 'Dashboard', path: '/dashboard' },
   { icon: IoPeopleOutline, title: 'Tenants', path: '/tenants' },
+  { icon: AiOutlineMessage, title: 'Inbox', path: '/inbox' },
+
   {
     icon: HiOutlineDocumentReport,
     title: 'Reports',
