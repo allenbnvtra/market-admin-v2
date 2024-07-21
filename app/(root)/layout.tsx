@@ -12,7 +12,7 @@ export default function RootLayout({
       <Sidebar />
       <div className="w-full">
         <Header />
-        <div className="bg-gray-50 px-7 py-3">{children}</div>
+        <div className="bg-gray-50 p-3 md:px-7">{children}</div>
         <div className="sticky bottom-0">
           <MobileNav />
         </div>
