@@ -4,10 +4,10 @@ import Title from './ui/Title'
 
 const Tenants = () => {
   return (
-    <div className="flex h-screen flex-col gap-3">
+    <div className="flex flex-col gap-3">
       <Title title="Tenants" />
 
-      <div className="xl:px-[5rem]">
+      <div className="h-[80vh] xl:px-[5rem]">
         {/* Checkbox for deleting / Filtering / Search bar */}
         <Control />
         <Table />
