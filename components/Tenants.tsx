@@ -7,7 +7,7 @@ const Tenants = () => {
     <div className="flex flex-col gap-3">
       <Title title="Tenants" />
 
-      <div className="h-[80vh] xl:px-[5rem]">
+      <div className="xl:px-[5rem]">
         {/* Checkbox for deleting / Filtering / Search bar */}
         <Control />
         <Table />

@@ -19,7 +19,7 @@ const Table = () => {
 
   return (
     <>
-      <div className="relative z-0 mt-4 h-[34.2rem] overflow-x-auto rounded-xl border border-[#6a76894c] bg-white shadow-md">
+      <div className="relative z-0 mt-4 h-[42rem] overflow-x-auto rounded-xl border border-[#6a76894c] bg-white shadow-md md:h-[34.2rem]">
         <div className="h-[calc(100%-3rem)] overflow-y-auto rounded-t-xl">
           <table className="w-full rounded-t-xl">
             <thead className="sticky top-0 text-sm">
