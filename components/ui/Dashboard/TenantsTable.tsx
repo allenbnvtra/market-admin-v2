@@ -16,60 +16,50 @@ const TenantsTable = () => {
         </div>
       </div>
 
-      <div className="relative mt-5 h-[380px] max-h-[380px] w-full rounded-xl border border-slate-300">
-        <div className="overflow-y-auto rounded-t-xl">
-          <table className="w-full table-fixed">
-            <colgroup className="hidden sm:block">
-              <col width="15%" />
-              <col width="25%" />
-              <col width="25%" />
-              <col width="20%" />
-              <col width="15%" />
-            </colgroup>
-            <thead className="bg-[#344d7aed] text-xs text-white">
-              <tr className="border-b-2">
-                <th className="w-[5rem] py-3 font-light">ID</th>
-                <th className="w-[10rem] py-3 font-light">Name</th>
-                <th className="w-[10rem] py-3 font-light">Stall Number</th>
-                <th className="w-[10rem] py-3 font-light">Email</th>
-                <th className="w-[5rem] py-3 font-light">Action</th>
+      <div className="relative z-0 mt-4 h-[24.2rem] overflow-x-auto rounded-xl border border-[#6a76894c] bg-white shadow-md">
+        <div className="h-[calc(100%-3rem)] overflow-y-auto rounded-t-xl">
+          <table className="w-full rounded-t-xl">
+            <thead className="sticky top-0 text-sm">
+              <tr>
+                <th className="t_head w-[15%]">ID</th>
+                <th className="t_head w-[20%]">Name</th>
+                <th className="t_head w-[15%] whitespace-nowrap">Stall No.</th>
+                <th className="t_head w-[20%]">Username</th>
+                <th className="t_head w-[15%]">Balance</th>
+                <th className="t_head w-[10%]">Action</th>
               </tr>
             </thead>
-            <tbody className="text-xs text-slate-800">
+            <tbody>
               <tr className="border-b border-b-slate-300">
-                <td className="overflow-hidden text-ellipsis whitespace-nowrap py-3 text-center sm:px-2">
-                  5842309522975923dasdsdklwqkdmlqkwmd
+                <td className="t_column">
+                  7892309182303489623490698731dasdaiuhi
                 </td>
-                <td className="overflow-hidden text-ellipsis whitespace-nowrap py-3 text-center sm:px-2">
-                  Allen V. Buenaventura
-                </td>
-                <td className="overflow-hidden text-ellipsis whitespace-nowrap py-3 text-center sm:px-2">
-                  Hen 9021
-                </td>
-                <td className="overflow-hidden text-ellipsis whitespace-nowrap py-3 text-center sm:px-2">
-                  allenbnvtra.11
-                </td>
-                <td className="flex items-center justify-center gap-2 py-3 text-lg md:text-[15px]">
+                <td className="t_column">Allen V. Buenaventura</td>
+                <td className="t_column">hen101</td>
+                <td className="t_column">allenbnvtra</td>
+                <td className="t_column">P 20,832.99</td>
+                <td className="flex items-center justify-center gap-2 py-3 text-lg md:text-[16px]">
                   <FaRegListAlt
                     title="View Bills"
-                    className="cursor-pointer text-blue-600"
+                    className="cursor-pointer text-blue-700"
                   />
                 </td>
               </tr>
+              {/* Additional rows as needed */}
             </tbody>
           </table>
         </div>
-        <div className="absolute bottom-0 left-0 w-full rounded-b-xl border bg-[#344d7aed]">
-          <div className="flex w-full items-center gap-3 px-2 py-3 text-xs text-white">
+        <div className="absolute bottom-0 left-0 w-full rounded-b-xl bg-[#344d7aed] text-white">
+          <div className="flex w-full items-center gap-3 border-t px-5 py-4 text-xs">
             <p>1-10 of 210</p>
-            <span className="flex gap-3 text-sm">
-              <p className="cursor-pointer text-white">
+            <div className="flex gap-3 text-sm">
+              <p className="cursor-pointer">
                 <FaAngleLeft />
               </p>
-              <p className="cursor-pointer text-white">
+              <p className="cursor-pointer">
                 <FaAngleRight />
               </p>
-            </span>
+            </div>
           </div>
         </div>
       </div>
