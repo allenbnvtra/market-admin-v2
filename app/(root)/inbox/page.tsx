@@ -9,7 +9,7 @@ import { IoSearchSharp } from 'react-icons/io5'
 const InboxPage = () => {
   return (
     <div className="flex h-[39rem] rounded-md border bg-white shadow-md">
-      <div className="w-[18rem] border-r pr-1 shadow-md">
+      <div className="w-[18rem] max-w-[18rem] border-r pr-1 shadow-md">
         <div className="flex flex-col p-2">
           <div className="mb-3 flex w-full items-center justify-between">
             <Title title="Inbox" />
@@ -29,9 +29,9 @@ const InboxPage = () => {
           </div>
 
           {/* MESSAGE */}
-          <div className="mb-1 flex h-[4rem] cursor-pointer items-center justify-between rounded-md bg-indigo-100 p-2">
+          <div className="mb-1 flex h-[3.3rem] cursor-pointer items-center justify-between rounded-md bg-indigo-100 px-2">
             <div className="flex items-center">
-              <div className="h-11 w-11 overflow-hidden rounded-full">
+              <div className="h-10 w-10 overflow-hidden rounded-full">
                 <Image
                   src="/images/cj.jpg"
                   height={45}
@@ -42,10 +42,10 @@ const InboxPage = () => {
               </div>
               <div className="ml-1 flex h-full items-center justify-between gap-2 py-1 text-xs font-light">
                 <div className="flex flex-col gap-1">
-                  <p className="max-w-[140px] overflow-hidden text-ellipsis whitespace-nowrap font-semibold text-slate-800">
+                  <p className="max-w-[120px] overflow-hidden text-ellipsis whitespace-nowrap font-semibold text-slate-800">
                     Elon Musk
                   </p>
-                  <p className="max-w-[170px] overflow-hidden text-ellipsis whitespace-nowrap text-slate-700">
+                  <p className="max-w-[130px] overflow-hidden text-ellipsis whitespace-nowrap text-slate-700">
                     You: Hey bro are you free tonight?
                   </p>
                 </div>
@@ -55,9 +55,9 @@ const InboxPage = () => {
           </div>
 
           {/* MESSAGE */}
-          <div className="hover:bg-indigo-45 mb-1 flex h-[4rem] cursor-pointer items-center justify-between rounded-md p-2 hover:bg-indigo-50">
+          <div className="hover:bg-indigo-45 mb-1 flex h-[3.3rem] cursor-pointer items-center justify-between rounded-md p-2 hover:bg-indigo-50">
             <div className="flex items-center">
-              <div className="h-11 w-11 overflow-hidden rounded-full">
+              <div className="h-10 w-10 overflow-hidden rounded-full">
                 <Image
                   src="/images/profile.jpg"
                   height={45}
@@ -91,8 +91,8 @@ const InboxPage = () => {
             <div className="h-8 w-8 overflow-hidden rounded-full">
               <Image
                 src="/images/cj.jpg"
-                height={35}
-                width={35}
+                height={38}
+                width={38}
                 alt="profile"
                 className="object-cover"
               />
