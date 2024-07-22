@@ -15,6 +15,14 @@ html {
   @apply max-w-20 overflow-hidden text-ellipsis whitespace-nowrap p-3 text-xs font-light;
 }
 
+.report_t_head {
+  @apply bg-[#344d7aed] px-8 py-4 text-center font-normal text-white;
+}
+
+.report_t_column {
+  @apply max-w-20 overflow-hidden text-ellipsis whitespace-nowrap p-2 text-center text-xs font-light;
+}
+
 .form_field {
   @apply flex flex-col gap-1 text-sm text-slate-700;
 }
@@ -25,4 +33,16 @@ html {
 
 .filter_dropdown {
   @apply cursor-pointer px-4 py-2 text-xs text-slate-800 hover:bg-slate-100;
+}
+
+.btn_success {
+  @apply z-0 rounded-md bg-green-600 py-2 font-medium text-white;
+}
+
+.btn_pending {
+  @apply z-0 rounded-md bg-orange-600 py-2 font-medium text-white;
+}
+
+.btn_failed {
+  @apply z-0 rounded-md bg-red-600 py-2 font-medium text-white;
 }

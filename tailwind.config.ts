@@ -1,7 +1,6 @@
 import type { Config } from 'tailwindcss'
 
 const config = {
-  darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -19,7 +18,7 @@ const config = {
     },
     extend: {
       fontSize: {
-        xs: '10px',
+        xs: '11px',
         sm: '13px'
       }
     }
